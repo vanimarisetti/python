@@ -1,0 +1,24 @@
+sno=int(input("sno:"))
+sname=input("sname:") 
+sgroup=input("sgroup:")
+s1=int(input("english:")) 
+s2=int(input("telugu:")) 
+s3=int(input("hindi:"))
+s4=int(input("environmental education:")) 
+s5=int(input("analytical skills:")) 
+s6=int(input("online business:"))
+avg=(s1+s2+s3+s4+s5+s6)/(6) 
+if s1>=35 and s2>=35 and s3>=35 and s4>=35 and s5>=35 and s6>=35:
+    print("pass") 
+elif avg>91:
+    print("O") 
+elif avg>81:
+    print("A")
+elif avg>71: 
+    print("B") 
+elif avg>61:
+    print("C") 
+elif avg>51:
+    pirnt("D") 
+else:
+    print("fail")
