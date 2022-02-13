@@ -1,0 +1,42 @@
+sugar=50
+oil=200
+biscuit=100
+soap=300
+rice=400
+sugarq=int(input('enter no of sugar packets: '))
+oilq=int(input('enter no of oil packets: '))                
+biscuitq=int(input('enter no of biscuit packets: '))
+soapq=int(input('enter no of soap packets: '))
+riceq=int(input('enter no of rice packets: '))
+bill=(sugarq*sugar)+(oilq*oil)+(biscuitq*biscuit)+(soapq*soap)+(riceq*rice)
+if bill>=5000 :
+    dis=bill*10/100
+    actual_bill=bill-dis
+    tax=actual_bill*10/100
+    final_bill=actual_bill+tax
+    print("Final bill amount :",final_bill)
+    
+elif bill>3000:
+    dis  = (bill*8)/100
+    actual_bill = bill-dis
+    tax = (actual_bill*10)/100
+    final_bill = actual_bill+tax
+    print("Final bill amount :",final_bill)
+    
+elif bill>2000:
+    dis = (bill*5)/100
+    actual_bill = bill- dis
+    tax = (actual_bill*18)/100
+    final_bill = actual_bill+tax
+    print("Final bill amount :",final_bill)
+    
+elif bill>1000:
+    dis = (bill*3)/100
+    actual_bill = bill- dis
+    tax = (actual_bill*18)/100
+    final_bill = actual_bill+tax 
+    print("Final bill amount :",final_bill)
+    
+else:
+    print("No discount applicable")
+    print("Final bill amount :",bill)
